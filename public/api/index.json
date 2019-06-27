@@ -1,0 +1,66 @@
+{
+  "ret": true,
+  "data": {
+    "city": "上海",
+    "carousel": [{
+      "id": "0001",
+      "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20196/b421363bbbb9184deacb4247eeea7485.jpg_750x200_12b42643.jpg"
+    }, {
+      "id": "0002",
+      "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20196/818f6cc784ae6669b74bbbb255414a53.jpg_750x200_66ca5873.jpg"
+    }, {
+      "id": "0003",
+      "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20193/87a224d0349d94a11e97f31aa1aba4f5.jpg_750x200_1f78af87.jpg"
+    }, {
+      "id": "0004",
+      "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20196/bc62e131afb380e98e4beac33e751c6c.jpg_750x200_2e248116.jpg"
+    }, {
+      "id": "0005",
+      "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20196/b67d0455e3514059d6589496cc81b007.jpg_750x200_f9aab4c7.jpg"
+    }, {
+      "id": "0006",
+      "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20195/6ab65be3878a5ea365514cf3a8125fd1.jpg_750x200_7b2fe404.jpg"
+    }],
+    "icons": [{
+      "id": "00001",
+      "title": "景点门票",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png"
+    }, {
+      "id": "00002",
+      "title": "一日游",
+      "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20193/f0f00d6dfe038c044dbc9a437f58b0eb.png"
+    }, {
+      "id": "00003",
+      "title": "北京必游",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png"
+    }, {
+      "id": "00004",
+      "title": "水上乐园",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/3e/86314b2af03b7502.png"
+    }, {
+      "id": "00005",
+      "title": "爬长城",
+      "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20191/0334cf5430b9b5505fd79e2b8d7e8670.png"
+    }, {
+      "id": "00006",
+      "title": "故宫",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/6c/9e54a8540fee0102.png"
+    }, {
+      "id": "00007",
+      "title": "动植物园",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png"
+    }, {
+      "id": "00008",
+      "title": "北京野生动物园",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/fa/2548667cb6e902.png"
+    }, {
+      "id": "00009",
+      "title": "北京世园会",
+      "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20194/b4511345827006994aa1980a3886f0ac.png"
+    }, {
+      "id": "00010",
+      "title": "考生专享",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/87/a6521252870ea402.png"
+    }]
+  }
+}
