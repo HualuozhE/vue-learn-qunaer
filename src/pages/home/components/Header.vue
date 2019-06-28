@@ -8,7 +8,7 @@
       <input type="text" placeholder="输入城市/景点/游玩主题" class="search-box">
     </div>
     <div class="header-right">
-      北京
+      {{ city }}
       <span class="iconfont">&#xe6aa;</span>
     </div>
   </div>
@@ -17,6 +17,9 @@
 <script>
 export default {
   name: 'qunaerHeader',
+  props: {
+    city: String,
+  },
 };
 </script>
 
