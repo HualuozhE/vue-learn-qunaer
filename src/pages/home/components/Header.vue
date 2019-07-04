@@ -7,24 +7,30 @@
       <span class="iconfont">&#xe60e;</span>
       <input type="text" placeholder="输入城市/景点/游玩主题" class="search-box">
     </div>
-    <div class="header-right">
+
+    <router-link to="/city" tag="div" class="header-right">
       {{ city }}
       <span class="iconfont">&#xe6aa;</span>
-    </div>
+    </router-link>
+
   </div>
 </template>
 
 <script>
+
+import { mapState } from 'vuex';
+
 export default {
   name: 'qunaerHeader',
-  props: {
-    city: String,
+  computed: {
+    ...mapState(['city']),
   },
 };
 </script>
 
 <style lang="less" scoped>
 @import "~@styles/varibles.less";
+@import "~@styles/mixins.less";
 
 .header {
   line-height: 0.86rem;
@@ -62,7 +68,7 @@ export default {
   .header-right {
     width: 1.24rem;
     height: 0.86rem;
-
+    .text-ellipsis;
     position: absolute;
     top: 0;
     right: 0;

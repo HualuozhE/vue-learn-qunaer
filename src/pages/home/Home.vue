@@ -2,7 +2,7 @@
   <div>
     <qunar-error :show="errorStatus"></qunar-error>
     <qunar-loading :show="loadingStatus"></qunar-loading>
-    <qunar-header :city="city"></qunar-header>
+    <qunar-header></qunar-header>
     <qunar-swiper :list="carousel"></qunar-swiper>
     <qunar-icon :list="icons"></qunar-icon>
     <qunar-pos-list></qunar-pos-list>
@@ -41,7 +41,6 @@ export default {
     return {
       errorStatus: false,
       loadingStatus: true,
-      city: '',
       carousel: [],
       icons: [],
       hotList: [],
@@ -67,7 +66,6 @@ export default {
       })
 
       .then((res) => {
-        this.city = res.city;
         this.carousel = res.carousel;
         this.icons = res.icons;
         this.hotList = res.hotList;
