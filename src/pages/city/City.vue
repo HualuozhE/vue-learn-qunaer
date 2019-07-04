@@ -1,12 +1,11 @@
 <template>
-<div>
-  <ct-header></ct-header>
-  <ct-search :list="cites"></ct-search>
-</div>
+  <div>
+    <ct-header></ct-header>
+    <ct-search :list="cites"></ct-search>
+  </div>
 </template>
 
 <script>
-
 import axios from 'axios';
 import ctHeader from './components/Header.vue';
 import ctSearch from './components/Search.vue';
@@ -25,7 +24,6 @@ export default {
 
   mounted() {
     axios('/api/city.json')
-
       .then((res) => {
         if (res.status !== 200 || !res.data || !res.data.ret) {
           return Promise.reject(new Error('request error!'));
@@ -42,5 +40,4 @@ export default {
 </script>
 
 <style lang="less" scoped>
-
 </style>

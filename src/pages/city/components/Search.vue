@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <div class="header">
       <div :class="['btn', {active: btnStatus}]" @click="changeArea('domestic')">境内</div>
       <div :class="['btn', {active: !btnStatus}]" @click="changeArea('overseas')">境外·港澳台</div>
@@ -11,13 +10,12 @@
         <h4>热门城市</h4>
       </div>
       <ul class="ct-list">
-        <li class="ct-list-item"
-            v-for="item of dataSet.hotCities"
-            :key="item.id"
-            @click="changeCity(item.name)"
-        >
-          {{ item.name }}
-        </li>
+        <li
+          class="ct-list-item"
+          v-for="item of dataSet.hotCities"
+          :key="item.id"
+          @click="changeCity(item.name)"
+        >{{ item.name }}</li>
       </ul>
     </div>
 
@@ -26,13 +24,12 @@
         <h4>字母排序</h4>
       </div>
       <ul class="lt-list">
-        <li class="lt-item"
-            v-for="(item, key) of dataSet.cities"
-            :key="key"
-            @click="jumpHandle(key)"
-        >
-          {{ key }}
-        </li>
+        <li
+          class="lt-item"
+          v-for="(item, key) of dataSet.cities"
+          :key="key"
+          @click="jumpHandle(key)"
+        >{{ key }}</li>
       </ul>
     </div>
 
@@ -41,16 +38,14 @@
         <h4 :ref="key">{{ key }}</h4>
       </div>
       <ul class="ct-list">
-        <li class="ct-list-item"
-            v-for="innerItem of item"
-            :key="innerItem.id"
-            @click="changeCity(innerItem.name)"
-        >
-          {{ innerItem.name }}
-        </li>
+        <li
+          class="ct-list-item"
+          v-for="innerItem of item"
+          :key="innerItem.id"
+          @click="changeCity(innerItem.name)"
+        >{{ innerItem.name }}</li>
       </ul>
     </div>
-
   </div>
 </template>
 
@@ -67,7 +62,9 @@ export default {
   },
   methods: {
     jumpHandle(eleName) {
-      window.document.documentElement.scrollTop = this.$refs[eleName][0].offsetTop;
+      window.document.documentElement.scrollTop = this.$refs[
+        eleName
+      ][0].offsetTop;
     },
     changeArea(areaText) {
       this.area = areaText;
@@ -99,12 +96,11 @@ export default {
 @import '~@styles/mixins.less';
 
 .letter {
-
   .lt-list {
     overflow: hidden;
     text-align: center;
     background-color: #fff;
-    padding: .2rem 0;
+    padding: 0.2rem 0;
 
     .lt-item {
       float: left;
@@ -112,7 +108,6 @@ export default {
       line-height: 1rem;
     }
   }
-
 }
 
 .ct-list {
@@ -120,13 +115,13 @@ export default {
   position: relative;
   width: 100%;
   background-color: #fff;
-  margin-bottom: -.02rem;
+  margin-bottom: -0.02rem;
 
   &::before {
     content: '';
     display: block;
     position: absolute;
-    width: .02rem;
+    width: 0.02rem;
     height: 100%;
     left: 100/3%;
     background-color: @borderColor;
@@ -135,7 +130,7 @@ export default {
     content: '';
     display: block;
     position: absolute;
-    width: .02rem;
+    width: 0.02rem;
     height: 100%;
     right: 100/3%;
     background-color: @borderColor;
@@ -145,17 +140,16 @@ export default {
     .text-ellipsis;
     float: left;
     width: 100/3%;
-    line-height: .92rem;
+    line-height: 0.92rem;
     text-align: center;
     border-bottom: 1px solid @borderColor;
-    margin-bottom: -.02rem;
-    padding: 0 .26rem;
+    margin-bottom: -0.02rem;
+    padding: 0 0.26rem;
   }
-
 }
 
 .header {
-  height: .6rem;
+  height: 0.6rem;
   text-align: center;
   background-color: @bgColor;
   color: #fff;
@@ -163,7 +157,7 @@ export default {
   > .btn {
     display: inline-block;
     width: 2.76rem;
-    line-height: .44rem;
+    line-height: 0.44rem;
     border: 1px solid #fff;
 
     &.active {
@@ -171,21 +165,19 @@ export default {
       color: @bgColor;
     }
     &:first-child {
-      border-top-left-radius: .04rem;
-      border-bottom-left-radius: .04rem;
+      border-top-left-radius: 0.04rem;
+      border-bottom-left-radius: 0.04rem;
     }
     &:last-child {
-      border-top-right-radius: .04rem;
-      border-bottom-right-radius: .04rem;
+      border-top-right-radius: 0.04rem;
+      border-bottom-right-radius: 0.04rem;
     }
   }
-
 }
 
 .ct-title {
-  line-height: .72rem;
-  padding-left: .3rem;
-  font-size: .24rem;
+  line-height: 0.72rem;
+  padding-left: 0.3rem;
+  font-size: 0.24rem;
 }
-
 </style>
