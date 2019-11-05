@@ -49,7 +49,8 @@ export default {
     };
   },
   mounted() {
-    axios.get('/api/index.json')
+    // eslint-disable-next-line
+    axios.get(process.env.BASE_URL + 'api/index.json')
 
       .then((res) => {
         if (!res || res.status !== 200) {

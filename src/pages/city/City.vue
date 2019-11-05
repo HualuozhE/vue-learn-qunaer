@@ -23,7 +23,8 @@ export default {
   },
 
   mounted() {
-    axios('/api/city.json')
+    // eslint-disable-next-line
+    axios(process.env.BASE_URL + '/api/city.json')
       .then((res) => {
         if (res.status !== 200 || !res.data || !res.data.ret) {
           return Promise.reject(new Error('request error!'));
